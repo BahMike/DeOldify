@@ -165,7 +165,7 @@ class VideoColorizer:
         self.bwframes_root = workfolder / "bwframes"
         self.audio_root = workfolder / "audio"
         self.colorframes_root = workfolder / "colorframes"
-        self.result_folder = workfolder / "result"
+        self.result_folder = Path("/storage/result")
 
     def _purge_images(self, dir):
         for f in os.listdir(dir):
